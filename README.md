@@ -31,7 +31,7 @@ Automação e Marketing:
 ## 🚀 Projetos em destaque
 
 | Projeto         | Descrição                                                                                                    | Tech       |
-|-----------------|--------------------------------------------------------------------------------------------------------------|------------|
+|-------------------------|--------------------------------------------------------------------------------------------------------------|------------|
 | **prefeitura**  | Sistema completo de acessibilidade web com ajuste de fontes, modo escuro, alto contraste e leitura por voz. | CSS        |
 | **ligga**       | Sistema avançado de rastreamento e redirecionamento para links do WhatsApp com captura de dados UTM.         | JavaScript |
 | **social-buttons-99** | Widget JS responsivo que adiciona botões fixos de redes sociais na lateral da página com animações suaves. | JavaScript |
