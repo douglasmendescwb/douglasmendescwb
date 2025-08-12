@@ -48,9 +48,9 @@ Automação e Marketing:
 
 ## 📫 Contato & Redes
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Douglas-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/seu-linkedin)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Douglas-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/douglasmendescwb)
 [![GitHub](https://img.shields.io/badge/GitHub-Douglas-black?style=for-the-badge&logo=github&logoColor=white)](https://github.com/douglasmendescwb)
-[![Kommo](https://img.shields.io/badge/Kommo-Parceiro-blue?style=for-the-badge&logo=kommo&logoColor=white)](https://kommo.com)
+[![Kommo](https://img.shields.io/badge/Kommo-Parceiro-blue?style=for-the-badge&logo=kommo&logoColor=white)](https://wa.me/5541985368008)
 
 ---
 
