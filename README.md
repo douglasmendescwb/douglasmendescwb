@@ -19,11 +19,11 @@ Como parceiro oficial **Kommo** e certificado em **WhatsApp Cloud API**, desenvo
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
-## Automação e Marketing:  
-![Google Ads](https://img.shields.io/badge/Google_Ads-4285F4?style=for-the-badge&logo=google-ads&logoColor=white)  
-![Meta Ads](https://img.shields.io/badge/Meta-1877F2?style=for-the-badge&logo=meta&logoColor=white)  
-![TikTok](https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white)  
-![N8N](https://img.shields.io/badge/N8N-000000?style=for-the-badge&logo=n8n&logoColor=white)  
+## Automação e Marketing:
+![Google Ads](https://img.shields.io/badge/Google_Ads-4285F4?style=for-the-badge&logo=google-ads&logoColor=white)
+![Meta Ads](https://img.shields.io/badge/Meta-1877F2?style=for-the-badge&logo=meta&logoColor=white)
+![TikTok](https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white)
+![N8N](https://img.shields.io/badge/N8N-000000?style=for-the-badge&logo=n8n&logoColor=white)
 ![Looker Studio](https://img.shields.io/badge/Looker_Studio-F9AB00?style=for-the-badge&logo=googleanalytics&logoColor=white)
 
 ---
