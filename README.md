@@ -1,4 +1,4 @@
-# 👋 Olá, eu sou o Douglas!
+# Olá, eu sou o Douglas!
 
 ## Sobre mim
 Desenvolvedor Full Stack em formação com especialização em IA aplicada ao marketing digital. Estou fazendo a transição de assessor de marketing para desenvolvedor Full Stack, mantendo minha expertise em automações e estratégias de crescimento.
@@ -7,7 +7,7 @@ Como parceiro oficial **Kommo** e certificado em **WhatsApp Cloud API**, desenvo
 
 ---
 
-## 🛠️ Tecnologias & Ferramentas
+## Tecnologias & Ferramentas
 
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
@@ -19,7 +19,7 @@ Como parceiro oficial **Kommo** e certificado em **WhatsApp Cloud API**, desenvo
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
-Automação e Marketing:  
+## Automação e Marketing:  
 ![Google Ads](https://img.shields.io/badge/Google_Ads-4285F4?style=for-the-badge&logo=google-ads&logoColor=white)  
 ![Meta Ads](https://img.shields.io/badge/Meta-1877F2?style=for-the-badge&logo=meta&logoColor=white)  
 ![TikTok](https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white)  
@@ -28,25 +28,25 @@ Automação e Marketing:
 
 ---
 
-## 🚀 Projetos em destaque
+## Projetos/Repositórios em destaque
 
-| Projeto                            | Descrição                                                                                                    | Tech       |
+| Projeto/Repositório                            | Descrição                                                                                                    | Tech       |
 |-------------------------------|--------------------------------------------------------------------------------------------------------------|------------|
 | **prefeitura**                     | Sistema completo de acessibilidade web com ajuste de fontes, modo escuro, alto contraste e leitura por voz. | CSS        |
 | **ligga**                          | Sistema avançado de rastreamento e redirecionamento para links do WhatsApp com captura de dados UTM.         | JavaScript |
 | **social-buttons-99**              | Widget JS responsivo que adiciona botões fixos de redes sociais na lateral da página com animações suaves. | JavaScript |
 
-[Veja todos os meus projetos no GitHub](https://github.com/douglasmendescwb) 👈
+[Veja todos os meus projetos/repositórios no GitHub](https://github.com/douglasmendescwb) 👈
 
 ---
 
-## 🎓 Educação & Formação
+## Educação & Formação
 - Graduação em Análise e Desenvolvimento de Sistemas (em andamento)
 - Certificado oficial Kommo Partner e WhatsApp Cloud API
 
 ---
 
-## 📫 Contato & Redes
+## Contato & Redes
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Douglas-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/douglasmendescwb)
 [![GitHub](https://img.shields.io/badge/GitHub-Douglas-black?style=for-the-badge&logo=github&logoColor=white)](https://github.com/douglasmendescwb)
@@ -54,12 +54,11 @@ Automação e Marketing:
 
 ---
 
-## 📈 Estatísticas GitHub
+## Estatísticas GitHub
 
 ![Douglas's GitHub stats](https://github-readme-stats.vercel.app/api?username=douglasmendescwb&show_icons=true&theme=dark&count_private=true)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=douglasmendescwb&layout=compact&theme=dark)
 
 ---
 
-> "Desenvolvendo soluções que unem técnica e estratégia para gerar resultados reais."
-
+> Desenvolvendo soluções que unem técnica e estratégia para gerar resultados reais.
