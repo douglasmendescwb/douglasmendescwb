@@ -1,7 +1,7 @@
 # 👋 Olá, eu sou o Douglas!
 
 ## Sobre mim
-Desenvolvedor Full Stack em formação com especialização em IA aplicada ao marketing digital. Estou fazendo a transição de gestor de tráfego para desenvolvedor completo, mantendo minha expertise em automações e estratégias de crescimento.
+Desenvolvedor Full Stack em formação com especialização em IA aplicada ao marketing digital. Estou fazendo a transição de gestor de tráfego para desenvolvedor Full Stack, mantendo minha expertise em automações e estratégias de crescimento.
 
 Como parceiro oficial **Kommo** e certificado em **WhatsApp Cloud API**, desenvolvo soluções robustas de comunicação automatizada usando inteligência artificial. Minha experiência combina desenvolvimento web com deep knowledge em performance marketing, criando sistemas que geram resultados mensuráveis.
 
