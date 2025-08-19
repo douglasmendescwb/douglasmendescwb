@@ -62,7 +62,7 @@ Como parceiro oficial **Kommo** e certificado em **WhatsApp Cloud API**, desenvo
 ![Douglas's GitHub stats](https://github-readme-stats.vercel.app/api?username=douglasmendescwb&show_icons=true&theme=dark&count_private=true)  
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=douglasmendescwb&layout=compact&theme=dark)
 
-> Desenvolvendo soluções que unem técnica e estratégia para gerar resultados reais.
+> ## Desenvolvendo soluções que unem técnica e estratégia para gerar resultados reais.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/douglasmendescwb/douglasmendescwb/output/github-contribution-grid-snake-dark.svg">
