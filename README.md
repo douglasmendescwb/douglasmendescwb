@@ -62,3 +62,11 @@ Como parceiro oficial **Kommo** e certificado em **WhatsApp Cloud API**, desenvo
 ---
 
 > Desenvolvendo soluções que unem técnica e estratégia para gerar resultados reais.
+
+---
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/douglasmendescwb/douglasmendescwb/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/douglasmendescwb/douglasmendescwb/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/douglasmendescwb/douglasmendescwb/output/github-contribution-grid-snake.svg">
+</picture>
