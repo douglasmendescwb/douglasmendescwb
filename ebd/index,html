@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Insights - Professor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; color: #111; background-color: #fff; margin: 0 auto; padding: 20px; max-width: 600px; font-size: 14pt; line-height: 1.5; }
+        
+        .btn-imprimir { display: block; width: 100%; background-color: #111; color: #fff; text-align: center; padding: 15px; font-weight: 900; border: none; cursor: pointer; margin-bottom: 30px; border-radius: 4px; text-transform: uppercase; }
+        .btn-imprimir:hover { background-color: #333; }
+        
+        h1 { font-size: 22pt; font-weight: 900; text-align: center; text-transform: uppercase; margin: 0 0 5px 0; border-bottom: 3px solid #111; padding-bottom: 10px;}
+        .sub { text-align: center; font-size: 11pt; color: #666; margin-bottom: 40px; font-weight: 700; text-transform: uppercase; margin-top: 10px;}
+        
+        .slide-bloco { margin-bottom: 50px; }
+        .slide-titulo { font-size: 16pt; font-weight: 900; background-color: #f4f4f4; padding: 10px 15px; border-left: 6px solid #111; margin-bottom: 15px; text-transform: uppercase; }
+        
+        ul { list-style-type: none; padding: 0; margin: 0; }
+        li { margin-bottom: 10px; border-bottom: 1px dashed #eee; padding-bottom: 5px; }
+        
+        .duvida-facil { color: #0277bd; font-weight: 700; margin-top: 15px; font-size: 13pt;}
+        .duvida-dificil { color: #c62828; font-weight: 700; margin-top: 15px; font-size: 13pt;}
+        .resposta { font-weight: 400; color: #333; padding-left: 10px; border-left: 3px solid #ccc; margin-top: 5px;}
+        .resposta li { border: none; margin-bottom: 5px; padding-bottom: 0;}
+
+        @media print { body { padding: 0; margin: 1cm; max-width: 100%; } .btn-imprimir { display: none; } .slide-bloco { page-break-inside: avoid; } }
+    </style>
+</head>
+<body>
+
+    <button class="btn-imprimir" onclick="window.print()">🖨️ Imprimir Insights (Até 6 palavras)</button>
+
+    <h1>Rascunho de Insights</h1>
+    <div class="sub">Guia rápido • Máximo 6 palavras/linha</div>
+
+    <!-- SLIDE 1 -->
+    <div class="slide-bloco">
+        <div class="slide-titulo">Slide 1: Bamidbar</div>
+        <ul>
+            <li>Original hebraico é Bamidbar.</li>
+            <li>Significa literalmente "No Deserto".</li>
+            <li>Viagem deveria ser bem rápida.</li>
+            <li>Mas durou quarenta longos anos.</li>
+            <li>Motivo: teimosia e muita incredulidade.</li>
+        </ul>
+        <div class="duvida-facil">❓ FÁCIL: Quem escreveu Números?</div>
+        <ul class="resposta">
+            <li>A tradição aponta para Moisés.</li>
+        </ul>
+        <div class="duvida-dificil">🔥 DIFÍCIL: Por que 40 anos?</div>
+        <ul class="resposta">
+            <li>Um ano para cada dia.</li>
+            <li>Espias ficaram quarenta dias lá.</li>
+        </ul>
+    </div>
+
+    <!-- SLIDE 2 -->
+    <div class="slide-bloco">
+        <div class="slide-titulo">Slide 2: A Ordem</div>
+        <ul>
+            <li>Números capítulo um, versículo dois.</li>
+            <li>Deus manda fazer um censo.</li>
+            <li>Contar todos, cabeça por cabeça.</li>
+            <li>Você não é só número.</li>
+            <li>Deus sabe o seu valor.</li>
+        </ul>
+        <div class="duvida-facil">❓ FÁCIL: O que é censo?</div>
+        <ul class="resposta">
+            <li>É a contagem oficial do povo.</li>
+        </ul>
+        <div class="duvida-dificil">🔥 DIFÍCIL: Deus não sabia o número?</div>
+        <ul class="resposta">
+            <li>Sabia, Ele é totalmente onisciente.</li>
+            <li>Mas queria organizar Sua nação.</li>
+        </ul>
+    </div>
+
+    <!-- SLIDE 3 -->
+    <div class="slide-bloco">
+        <div class="slide-titulo">Slide 3: O Nome (Estrelas)</div>
+        <ul>
+            <li>Salmos cento e quarenta e sete.</li>
+            <li>Deus conta todas as estrelas.</li>
+            <li>Ele chama cada uma pelo nome.</li>
+            <li>Universo tem sextilhões de estrelas.</li>
+            <li>Mais que areia na Terra.</li>
+            <li>Ele conhece a sua dor.</li>
+        </ul>
+        <div class="duvida-facil">❓ FÁCIL: Ciência sabe o número?</div>
+        <ul class="resposta">
+            <li>Não, são apenas grandes estimativas.</li>
+        </ul>
+        <div class="duvida-dificil">🔥 DIFÍCIL: Estrela tem nome na Bíblia?</div>
+        <ul class="resposta">
+            <li>Sim, Jó cita o Órion.</li>
+            <li>Jó também cita as Plêiades.</li>
+        </ul>
+    </div>
+
+    <!-- SLIDE 4 & 5 -->
+    <div class="slide-bloco">
+        <div class="slide-titulo">Slides 4/5: Liderança (Os 12)</div>
+        <ul>
+            <li>Moisés não liderou tudo sozinho.</li>
+            <li>Deus ordenou doze príncipes líderes.</li>
+            <li>Gallup: Doze pessoas por líder.</li>
+            <li>SWAT: Equipes de doze táticos.</li>
+            <li>Agile: Doze pessoas gera caos.</li>
+            <li>São sessenta e seis rotas.</li>
+            <li>Dunbar: Teto biológico de intimidade.</li>
+            <li>Jesus também escolheu doze apóstolos.</li>
+        </ul>
+        <div class="duvida-facil">❓ FÁCIL: Quem eram os líderes?</div>
+        <ul class="resposta">
+            <li>Eram chefes de cada tribo.</li>
+        </ul>
+        <div class="duvida-dificil">🔥 DIFÍCIL: Por que o número 12?</div>
+        <ul class="resposta">
+            <li>Doze filhos do patriarca Jacó.</li>
+            <li>Simboliza governo e perfeição divina.</li>
+        </ul>
+    </div>
+
+    <!-- SLIDE 6 & 7 -->
+    <div class="slide-bloco">
+        <div class="slide-titulo">Slides 6/7: Escravos a Soldados</div>
+        <ul>
+            <li>Foram seiscentos mil homens aptos.</li>
+            <li>Homens de vinte anos acima.</li>
+            <li>Eles eram escravos no Egito.</li>
+            <li>Agora são um exército real.</li>
+            <li>A guerra finalmente ia começar.</li>
+        </ul>
+        <div class="duvida-facil">❓ FÁCIL: Mulheres foram contadas agora?</div>
+        <ul class="resposta">
+            <li>Não, apenas os homens guerreiros.</li>
+        </ul>
+        <div class="duvida-dificil">🔥 DIFÍCIL: Qual a população total?</div>
+        <ul class="resposta">
+            <li>Cerca de dois milhões.</li>
+            <li>Êxodo 12:37 explica essa matemática.</li>
+        </ul>
+    </div>
+
+    <!-- SLIDE 8 & 9 -->
+    <div class="slide-bloco">
+        <div class="slide-titulo">Slides 8/9: Mão no Arado</div>
+        <ul>
+            <li>Vista a armadura de Deus.</li>
+            <li>Efésios seis, versículo onze.</li>
+            <li>Mão no arado, não pare.</li>
+            <li>Lucas nove, versículo sessenta e dois.</li>
+            <li>Soldado de Cristo não foge.</li>
+        </ul>
+        <div class="duvida-facil">❓ FÁCIL: O que é um arado?</div>
+        <ul class="resposta">
+            <li>Ferramenta para arar a terra.</li>
+        </ul>
+        <div class="duvida-dificil">🔥 DIFÍCIL: Por que não olhar atrás?</div>
+        <ul class="resposta">
+            <li>A cova sai toda torta.</li>
+            <li>Lembre da mulher de Ló.</li>
+        </ul>
+    </div>
+
+    <!-- SLIDE 10 & 11 -->
+    <div class="slide-bloco">
+        <div class="slide-titulo">Slides 10/11: Excelência Bastidores</div>
+        <ul>
+            <li>Levitas não foram para guerra.</li>
+            <li>Cuidavam da Tenda de Deus.</li>
+            <li>Preguiça faz o telhado envergar.</li>
+            <li>Eclesiastes dez, versículo dezoito.</li>
+            <li>Faça tudo com muita excelência.</li>
+        </ul>
+        <div class="duvida-facil">❓ FÁCIL: Qual era o trabalho deles?</div>
+        <ul class="resposta">
+            <li>Montar e desmontar a Tenda.</li>
+        </ul>
+        <div class="duvida-dificil">🔥 DIFÍCIL: Por que a tribo Levi?</div>
+        <ul class="resposta">
+            <li>Eles foram fiéis a Deus.</li>
+            <li>Lutaram contra o bezerro de ouro.</li>
+        </ul>
+    </div>
+
+    <!-- SLIDE 12 -->
+    <div class="slide-bloco">
+        <div class="slide-titulo">Slide 12: Centro Absoluto</div>
+        <ul>
+            <li>Tenda ficava no centro exato.</li>
+            <li>Levitas faziam o primeiro anel.</li>
+            <li>Deus deve ser o centro.</li>
+            <li>Sem Ele, a vida desaba.</li>
+        </ul>
+        <div class="duvida-facil">❓ FÁCIL: Tinha proteção em volta?</div>
+        <ul class="resposta">
+            <li>Sim, barracas em todo redor.</li>
+        </ul>
+        <div class="duvida-dificil">🔥 DIFÍCIL: Formava cruz vista de cima?</div>
+        <ul class="resposta">
+            <li>Muitos teólogos dizem que sim.</li>
+            <li>Pela divisão exata dos cardeais.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
