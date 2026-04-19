@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação Projetor - Números 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        /* DESIGN KINDLE / EBOOK: Elegante, minimalista, tipografia focada, sem brutalismo */
+        body, html { margin: 0; padding: 0; height: 100%; background-color: #fdfdfd; color: #222222; font-family: 'Merriweather', serif; overflow: hidden; }
+        
+        /* Controles */
+        .controls { position: absolute; top: 20px; left: 20px; z-index: 100; opacity: 0.3; transition: opacity 0.3s ease; display: flex; align-items: center; }
+        .controls:hover { opacity: 1; }
+        .btn { background: #ffffff; color: #333; border: 1px solid #d1d5db; padding: 10px 18px; cursor: pointer; border-radius: 6px; font-weight: 600; font-family: 'Inter', sans-serif; font-size: 1vw; text-transform: uppercase; letter-spacing: 0.5px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); transition: background 0.2s; }
+        .btn:hover { background: #f3f4f6; }
+        .instrucao-controles { margin-left: 15px; font-family: 'Inter', sans-serif; font-size: 0.9vw; color: #6b7280; font-weight: 400;}
+        
+        .slides-container { position: relative; width: 100%; height: 100%; }
+        .slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; opacity: 0; transition: opacity 0.5s ease; visibility: hidden; padding: 5vw; box-sizing: border-box; }
+        .slide.active { opacity: 1; visibility: visible; }
+        
+        /* Tipografia Elegante */
+        .titulo { font-family: 'Inter', sans-serif; font-size: 3.5vw; font-weight: 800; color: #111827; margin-bottom: 25px; line-height: 1.2; letter-spacing: -0.5px; }
+        .linha-divisoria { width: 60px; height: 3px; background-color: #d1d5db; margin: 0 auto 35px auto; }
+        
+        /* Box de Versículos: Limpo e sutil */
+        .versiculo-box { background: #ffffff; border: 1px solid #e5e7eb; border-left: 4px solid #9ca3af; padding: 3.5vw; border-radius: 8px; max-width: 80%; margin-bottom: 30px; text-align: left; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02); }
+        .versiculo-texto { font-family: 'Merriweather', serif; font-size: 2.2vw; font-style: italic; line-height: 1.6; margin: 0; color: #374151; }
+        .versiculo-ref { font-size: 1.2vw; font-family: 'Inter', sans-serif; font-weight: 600; display: inline-block; margin-top: 20px; color: #6b7280; text-transform: uppercase; letter-spacing: 1px; }
+        
+        /* Textos e Listas */
+        .texto-normal { font-family: 'Inter', sans-serif; font-size: 2vw; font-weight: 400; color: #4b5563; max-width: 80%; line-height: 1.6; margin-top: 10px; }
+        .texto-destaque { font-weight: 600; color: #111827; }
+        
+        .lista-dados { text-align: left; font-family: 'Inter', sans-serif; font-size: 1.8vw; font-weight: 400; max-width: 80%; line-height: 1.7; margin-top: 20px; padding: 0;}
+        .lista-dados li { margin-bottom: 15px; border-left: 2px solid #d1d5db; padding-left: 15px; list-style: none; color: #4b5563;}
+        
+        /* Estilos das Questões: Suaves e profissionais */
+        .questao-box { width: 80%; text-align: left; }
+        .questao-pergunta { font-family: 'Inter', sans-serif; font-size: 2.2vw; font-weight: 600; color: #111827; margin-bottom: 30px; line-height: 1.4;}
+        .opcao { background: #ffffff; border: 1px solid #e5e7eb; padding: 1.5vw 2vw; margin-bottom: 12px; border-radius: 6px; font-family: 'Inter', sans-serif; font-size: 1.6vw; color: #4b5563; display: flex; align-items: center; transition: all 0.2s;}
+        .opcao-checkbox { width: 1.5vw; height: 1.5vw; border: 1px solid #9ca3af; border-radius: 3px; margin-right: 2vw; flex-shrink: 0; background: #fff; position: relative;}
+        
+        /* Resposta Correta */
+        .opcao-correta { background-color: #f0fdf4 !important; border-color: #bbf7d0 !important; color: #166534 !important; font-weight: 600;}
+        .opcao-correta .opcao-checkbox { background-color: #22c55e; border-color: #22c55e; }
+        .opcao-correta .opcao-checkbox::after { content: '✔'; color: white; position: absolute; top: -0.2vw; left: 0.2vw; font-size: 1.1vw; }
+
+        .rodape { position: absolute; bottom: 20px; right: 30px; font-family: 'Inter', sans-serif; font-size: 1vw; font-weight: 400; color: #9ca3af; }
+    </style>
+</head>
+<body>
+
+    <div class="controls">
+        <button class="btn" onclick="toggleFullScreen(event)">Tela Cheia</button>
+        <span class="instrucao-controles">Clique na tela, use as setas ou role o mouse para avançar</span>
+    </div>
+
+    <div class="slides-container">
+        
+        <!-- Slide 1: Capa -->
+        <div class="slide active">
+            <div style="font-family: 'Inter', sans-serif; font-size: 1.5vw; color: #6b7280; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 15px;">Estudo Bíblico</div>
+            <div class="titulo" style="font-size: 4.5vw; margin-bottom: 10px;">Livro de Números</div>
+            <div class="linha-divisoria" style="margin-bottom: 40px;"></div>
+            
+            <div class="texto-normal" style="font-size: 2.2vw; color: #4b5563;">
+                A Organização do Povo de Deus (Cap. 1)<br><br>
+                <span style="font-size: 1.5vw; color: #9ca3af;">Original em hebraico:</span><br>
+                <span class="texto-destaque" style="font-size: 2.5vw;">BAMIDBAR ("No Deserto")</span>
+            </div>
+        </div>
+
+        <!-- Slide 2: O Censo -->
+        <div class="slide">
+            <div class="titulo">A Ordem de Deus</div>
+            <div class="linha-divisoria"></div>
+            <div class="versiculo-box">
+                <p class="versiculo-texto">"Façam um censo de toda a congregação dos filhos de Israel, segundo as suas famílias, segundo a casa de seus pais, contando todos os homens, cabeça por cabeça."</p>
+                <span class="versiculo-ref">Números 1:2 (NAA)</span>
+            </div>
+        </div>
+
+        <!-- Slide 3: Estrelas e o Nome -->
+        <div class="slide">
+            <div class="titulo">A Regra do Nome</div>
+            <div class="linha-divisoria"></div>
+            <div class="versiculo-box">
+                <p class="versiculo-texto">"Ele conta o número das estrelas, chamando-as todas pelo seu nome."</p>
+                <span class="versiculo-ref">Salmos 147:4 (NAA)</span>
+            </div>
+            <div class="texto-normal">O universo possui "sextilhões" de estrelas. Se Deus chama cada uma delas pelo nome, <span class="texto-destaque">Ele jamais esqueceria o seu!</span> Você não é só um número.</div>
+        </div>
+
+        <!-- Slide 4: Questão 1 (Pergunta) -->
+        <div class="slide">
+            <div class="questao-box">
+                <div class="questao-pergunta">1. O que a ordem de contar "cabeça por cabeça" nos ensina sobre Deus?</div>
+                <div class="opcao"><div class="opcao-checkbox"></div> Que cada pessoa tem um&nbsp; <strong> preço </strong>&nbsp;para Ele.</div>
+                <div class="opcao"><div class="opcao-checkbox"></div> Que cada pessoa tem um&nbsp; <strong> valor </strong>&nbsp;para Ele.</div>
+                <div class="opcao"><div class="opcao-checkbox"></div> Que cada pessoa tem um&nbsp; <strong>nome</strong>&nbsp;para Ele.</div>
+            </div>
+        </div>
+        
+        <!-- Slide 5: Questão 1 (Resposta) -->
+        <div class="slide">
+            <div class="questao-box">
+                <div class="questao-pergunta">1. O que a ordem de contar "cabeça por cabeça" nos ensina sobre Deus?</div>
+                <div class="opcao"><div class="opcao-checkbox"></div> Que cada pessoa tem um&nbsp;<strong> preço </strong>&nbsp;para Ele.</div>
+                <div class="opcao"><div class="opcao-checkbox"></div> Que cada pessoa tem um&nbsp;<strong> valor </strong>&nbsp;para Ele.</div>
+                <div class="opcao opcao-correta"><div class="opcao-checkbox"></div> Que cada pessoa tem um&nbsp;<strong> nome </strong>&nbsp;para Ele.</div>
+            </div>
+        </div>
+
+        <!-- Slide 6: A Regra dos 12 Líderes -->
+        <div class="slide">
+            <div class="titulo">A Ciência dos 12 Líderes</div>
+            <div class="linha-divisoria"></div>
+            <div class="versiculo-box" style="padding: 2.5vw; margin-bottom: 20px;">
+                <p class="versiculo-texto" style="font-size: 1.8vw;">"Um homem de cada tribo deve estar com vocês, sendo cada um cabeça da casa de seus pais."</p>
+                <span class="versiculo-ref">Números 1:4 (NAA)</span>
+            </div>
+            <ul class="lista-dados">
+                <li><span class="texto-destaque">Estudo Gallup (2025):</span> Média corporativa atual é de 12,1 pessoas por líder.</li>
+                <li><span class="texto-destaque">SWAT / BOPE:</span> Equipes táticas de elite operam entre 8 e 12 homens.</li>
+                <li><span class="texto-destaque">Biologia (Dunbar):</span> O limite de intimidade e liderança real do cérebro é 12.</li>
+            </ul>
+        </div>
+
+        <!-- Slide 7: Questão 2 (Pergunta) -->
+        <div class="slide">
+            <div class="questao-box">
+                <div class="questao-pergunta">2. Qual líder do Novo Testamento aplicou essa mesma regra exata de gestão?</div>
+                <div class="opcao"><div class="opcao-checkbox"></div> <strong>Paulo</strong>, ao escolher 12 apóstolos.</div>
+                <div class="opcao"><div class="opcao-checkbox"></div> <strong>Pedro</strong>, ao escolher 12 apóstolos.</div>
+                <div class="opcao"><div class="opcao-checkbox"></div> <strong>Jesus</strong>, ao escolher 12 apóstolos.</div>
+            </div>
+        </div>
+        
+        <!-- Slide 8: Questão 2 (Resposta) -->
+        <div class="slide">
+            <div class="questao-box">
+                <div class="questao-pergunta">2. Qual líder do Novo Testamento aplicou essa mesma regra exata de gestão?</div>
+                <div class="opcao"><div class="opcao-checkbox"></div> <strong>Paulo</strong>, ao escolher 12 apóstolos.</div>
+                <div class="opcao"><div class="opcao-checkbox"></div> <strong>Pedro</strong>, ao escolher 12 apóstolos.</div>
+                <div class="opcao opcao-correta"><div class="opcao-checkbox"></div> <strong>Jesus</strong>, ao escolher 12 apóstolos.</div>
+            </div>
+        </div>
+
+        <!-- Slide 9: Escravos a Soldados -->
+        <div class="slide">
+            <div class="titulo">De Escravos a Soldados</div>
+            <div class="linha-divisoria"></div>
+            <div class="versiculo-box">
+                <p class="versiculo-texto">"Foram contados todos os de Israel... de vinte anos para cima, todos os que em Israel podiam sair à guerra: foram seiscentos e três mil quinhentos e cinquenta."</p>
+                <span class="versiculo-ref">Números 1:45-46 (NAA)</span>
+            </div>
+        </div>
+
+        <!-- Slide 10: A Mão no Arado -->
+        <div class="slide">
+            <div class="titulo">A Mão no Arado</div>
+            <div class="linha-divisoria"></div>
+            <div class="versiculo-box" style="margin-bottom: 20px; padding: 2.5vw;">
+                <p class="versiculo-texto" style="font-size: 1.8vw;">"Vistam-se com toda a armadura de Deus, para poderem ficar firmes contra as ciladas do diabo." <br><span class="versiculo-ref" style="margin-top: 10px;">Efésios 6:11</span></p>
+                <div style="height: 1px; background-color: #e5e7eb; margin: 1.5vw 0;"></div>
+                <p class="versiculo-texto" style="font-size: 1.8vw;">"Jesus respondeu: Ninguém que põe a mão no arado e olha para trás é apto para o Reino de Deus." <br><span class="versiculo-ref" style="margin-top: 10px;">Lucas 9:62</span></p>
+            </div>
+            <div class="texto-normal">Um soldado chamado por Cristo assume a linha de frente e <span class="texto-destaque">não retrocede.</span></div>
+        </div>
+
+        <!-- Slide 11: Questão 3 (Pergunta) -->
+        <div class="slide">
+            <div class="questao-box">
+                <div class="questao-pergunta">3. Qual deve ser a postura de um cristão diante das batalhas da vida?</div>
+                <div class="opcao"><div class="opcao-checkbox"></div> Vestir a armadura e <strong>&nbsp;recuar&nbsp;</strong> da luta.</div>
+                <div class="opcao"><div class="opcao-checkbox"></div> Vestir a armadura e <strong>&nbsp;fugir&nbsp;</strong> da luta.</div>
+                <div class="opcao"><div class="opcao-checkbox"></div> Vestir a armadura e <strong>&nbsp;avançar&nbsp;</strong> na luta.</div>
+            </div>
+        </div>
+        
+        <!-- Slide 12: Questão 3 (Resposta) -->
+        <div class="slide">
+            <div class="questao-box">
+                <div class="questao-pergunta">3. Qual deve ser a postura de um cristão diante das batalhas da vida?</div>
+                <div class="opcao"><div class="opcao-checkbox"></div> Vestir a armadura e <strong>&nbsp;recuar&nbsp;</strong> da luta.</div>
+                <div class="opcao"><div class="opcao-checkbox"></div> Vestir a armadura e <strong>&nbsp;fugir&nbsp;</strong> da luta.</div>
+                <div class="opcao opcao-correta"><div class="opcao-checkbox"></div> Vestir a armadura e <strong>&nbsp;avançar&nbsp;</strong> na luta.</div>
+            </div>
+        </div>
+
+        <!-- Slide 13: Excelência nos Bastidores -->
+        <div class="slide">
+            <div class="titulo">Excelência nos Bastidores</div>
+            <div class="linha-divisoria"></div>
+            <div class="versiculo-box" style="margin-bottom: 20px;">
+                <p class="versiculo-texto">"Pela muita preguiça o telhado enverga, e pela frouxidão das mãos a casa tem goteiras."</p>
+                <span class="versiculo-ref">Eclesiastes 10:18 (NAA)</span>
+            </div>
+            <div class="texto-normal">Os levitas cuidavam da Tenda nos bastidores. Fazer o serviço de Deus exige <span class="texto-destaque">perfeição e decoro.</span></div>
+        </div>
+
+        <!-- Slide 14: Questão 4 (Pergunta) -->
+        <div class="slide">
+            <div class="questao-box">
+                <div class="questao-pergunta">4. Qual é a principal lição sobre servir nos bastidores da igreja (levitas)?</div>
+                <div class="opcao"><div class="opcao-checkbox"></div> A obra de Deus exige muita <strong>&nbsp;preguiça&nbsp;</strong>.</div>
+                <div class="opcao"><div class="opcao-checkbox"></div> A obra de Deus exige muita <strong>&nbsp;pressa&nbsp;</strong>.</div>
+                <div class="opcao"><div class="opcao-checkbox"></div> A obra de Deus exige muita <strong>&nbsp;excelência&nbsp;</strong>.</div>
+            </div>
+        </div>
+        
+        <!-- Slide 15: Questão 4 (Resposta) -->
+        <div class="slide">
+            <div class="questao-box">
+                <div class="questao-pergunta">4. Qual é a principal lição sobre servir nos bastidores da igreja (levitas)?</div>
+                <div class="opcao"><div class="opcao-checkbox"></div> A obra de Deus exige muita <strong>&nbsp;preguiça&nbsp;</strong>.</div>
+                <div class="opcao"><div class="opcao-checkbox"></div> A obra de Deus exige muita <strong>&nbsp;pressa&nbsp;</strong>.</div>
+                <div class="opcao opcao-correta"><div class="opcao-checkbox"></div> A obra de Deus exige muita <strong>&nbsp;excelência&nbsp;</strong>.</div>
+            </div>
+        </div>
+
+        <!-- Slide 16: O Centro Absoluto -->
+        <div class="slide">
+            <div class="titulo">O Centro Absoluto</div>
+            <div class="linha-divisoria"></div>
+            <div class="versiculo-box">
+                <p class="versiculo-texto">"Os levitas acamparão ao redor do tabernáculo do testemunho... e os filhos de Israel acamparão ao redor..."</p>
+                <span class="versiculo-ref">Números 1:50, 52-53 (NAA)</span>
+            </div>
+            <div class="texto-normal" style="font-size: 2vw;">A Tenda de Deus ficava montada exatamente no meio do povo. Se Deus não for o centro da sua casa, <span class="texto-destaque">a vida inteira desaba.</span></div>
+        </div>
+
+    </div>
+
+    <div class="rodape" id="contador">1 / 16</div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const contador = document.getElementById('contador');
+
+        function updateSlide() {
+            slides.forEach((s, index) => {
+                s.classList.remove('active');
+                if (index === currentSlide) s.classList.add('active');
+            });
+            contador.innerText = (currentSlide + 1) + " / " + slides.length;
+        }
+
+        // Navegação
+        function nextSlide() { if (currentSlide < slides.length - 1) { currentSlide++; updateSlide(); } }
+        function prevSlide() { if (currentSlide > 0) { currentSlide--; updateSlide(); } }
+
+        // 1. Teclado
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === 'Space') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+
+        // 2. Clique na tela (ignorando o botão)
+        document.body.addEventListener('click', (e) => {
+            if(!e.target.closest('.btn')) {
+                nextSlide();
+            }
+        });
+
+        // 3. Rolagem do Mouse (com pequeno delay)
+        let isScrolling = false;
+        document.addEventListener('wheel', (e) => {
+            if (isScrolling) return;
+            isScrolling = true;
+            
+            if (e.deltaY > 0) nextSlide();
+            else prevSlide();
+            
+            setTimeout(() => { isScrolling = false; }, 300);
+        });
+
+        // Tela Cheia
+        function toggleFullScreen(e) {
+            e.stopPropagation();
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen().catch(err => alert(`Erro: ${err.message}`));
+            } else {
+                document.exitFullscreen();
+            }
+        }
+    </script>
+</body>
+</html>
